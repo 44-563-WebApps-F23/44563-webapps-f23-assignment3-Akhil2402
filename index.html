@@ -26,6 +26,7 @@
 <a href="Mystats.html" target="_blank"> Mystats image link</a>
 <hr>
 <h2> Sports Table </h2>
+<p> Below table shows different types of sports, reason and Hours</p>
 <table>
     <tr>
             <th> Sport Name </th>
@@ -52,4 +53,19 @@
         <td>     2      </td>    
     </tr>
 </table>
+<hr>
+<h2> Code Display</h2>
+<blockquote> Better Broken Image Handling </blockquote>
+<a href="https://stackoverflow.com/questions/92720/jquery-javascript-to-replace-broken-images" target="_blank"> Link to stackoverflow
+</a>
+<pre>
+// Replace source
+$('img').on("error", function() {
+$(this).attr('src', '/images/missing.png');
+});
+// Or, hide them
+$("img").on("error", function() {
+  $(this).hide();
+});
+</pre>
 </head>
